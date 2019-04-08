@@ -1,3 +1,13 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+in t main()
+{
+    string nazwa;
+    double suma_spr=0;
+    double suma_kart=0;
+    double suma_akt=0;
     double srednia=0;
     int a,b,c;
     int licz_a=0, licz_b=0, licz_c=0;
