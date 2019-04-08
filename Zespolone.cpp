@@ -25,6 +25,11 @@ zespolone operator *(const zespolone &a, const zespolone &b){
     z.im=a.im*b.re+a.re*b.im;
     return z;
 }
+zespolone operator /(const zespolone &a, const zespolone &b){
+    zespolone z;
+    z.re=(a.re∗b.re+a.im∗b.im)/(b.re∗b.re+b.im∗b.im);
+    z.im=(a.im∗b.re−a.re∗b.im)/(b.re∗b.re+b.im∗b.im);
+}
 std::ostream& operator<<(std::ostream& out, const zespolone& z){
     out<<"re_=_"<<z.re<<"_im_=_"<<z.im;
     return out;
